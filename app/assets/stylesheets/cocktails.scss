@@ -1,13 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .d-flex {
 display: flex;
-padding: 20px;
+padding-top: 5px;
 
 }
+
+a {
+  border: none;
+}
+body {
+  background-color: white;
+}
+
+.col-sm-12 {
+  border: #EFB332 dotted 50px;
+  padding: 10px;
+
+}
+
+
+.col-sm-12 .img_index {
+   border: #EF6F00 dotted 20px;
+   padding: 5px;
+
+}
+
+.btn {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 25px;
+  font-color: #000528;
+
+}
+
+h1 {
+  font-family: 'Archivo Black', sans-serif;
+
+}
+
+.col-6 {
+  margin: 40px;
+}
+
 
 
 .top {
@@ -17,11 +55,22 @@ background-position: center;
 just-content: center;
 display: flex;
 align-items: center;
+border: #E89600 dotted 20px;
+margin: 0px;
 
 }
 
 .top h1 {
 color: white;
-font-family: 'Bitter', serif;
+font-family: 'Archivo Black', sans-serif;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    border: black dotted 20px;
+    font-family: 'Archivo Black', sans-serif;
 
 }

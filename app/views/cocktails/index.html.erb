@@ -1,11 +1,11 @@
 
-<h1 id="all_head">Your Cocktails</h1>
+<h1 id="all_head">Cocktails</h1>
 
 <div class="container">
   <div class="row">
     <%@cocktails.each do |cocktail| %>
-      <div class="col-sm-4">
-      <%= cl_image_tag cocktail.photo, height: 150, width: 150, radius: 5, crop: :thumb %>
+      <div class="col-sm-12">
+      <%= cl_image_tag cocktail.photo, height: 150, width: 150, radius: 5, crop: :thumb, :class => 'img_index' %>
       <%= link_to cocktail.name, cocktail_path(cocktail), class: "btn" %>
      </div>
     <%end%>
