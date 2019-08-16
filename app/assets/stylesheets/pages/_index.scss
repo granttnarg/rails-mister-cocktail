@@ -1,2 +1,24 @@
 // Import page-specific CSS files here.
 @import "home";
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+
+#all_head {
+  text-align: center;
+  font-family: 'Bitter', serif;
+
+}
+
+#main_banner {
+  height: 300px;
+  background: auto;
+}
+
+#main_banner h1 {
+  color: white;
+
+}
+
+#main_banner p {
+  color: white;
+
+}

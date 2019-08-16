@@ -17,13 +17,13 @@ class CocktailsController < ApplicationController
   def create
     @cocktail = Cocktail.new(cocktail_params)
     @cocktail.save
-    redirect_to cocktails_index_path
+    redirect_to cocktails_path(@cocktail), notice: 'Cocktail was successfully created.'
   end
 
 private
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
   end
 
 end

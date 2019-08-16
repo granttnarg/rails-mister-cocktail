@@ -1,13 +1,14 @@
-<h1>All Cocktails</h1>
+
+<h1 id="all_head">Your Cocktails</h1>
 
 <div class="container">
   <div class="row">
     <%@cocktails.each do |cocktail| %>
       <div class="col-sm-4">
+      <%= cl_image_tag cocktail.photo, height: 150, width: 150, radius: 5, crop: :thumb %>
       <%= link_to cocktail.name, cocktail_path(cocktail), class: "btn" %>
-      <img src="https://images.unsplash.com/photo-1553451133-8083c47243d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2234&q=80" alt="..." class="rounded-circle" width="100px">
      </div>
     <%end%>
   </div>
+  <div class="col-6"> <%= link_to "Create a Cocktail", new_cocktail_path %></div>
 </div>
-<img src="" alt="">
