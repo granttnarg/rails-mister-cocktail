@@ -4,15 +4,44 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 #all_head {
   text-align: center;
-  justify-content: center;
-
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Abril Fatface', cursive;
 
 }
 
+a:hover {
+  border: yellow dotted 20px;
+  text-decoration: none;
+  color: black;
+  border: #EF6E01 dotted 20px;
+
+}
+
+
+#line {
+  text-align: center;
+  padding-top: 40px;
+  width: 100vh;
+}
+
+#line_show {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom:  50px;
+  width: 100vh;
+}
+
 #main_banner {
+  display:flex;
   height: 300px;
   background: 100%;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+
+
 }
 
 #main_banner h1 {
