@@ -32,6 +32,9 @@ Ingredient.create(name: "MoonShine of your choice")
 Ingredient.create(name: "Petrol")
 Ingredient.create(name: "Edible Gold")
 Ingredient.create(name: "Egg White")
+Ingredient.create(name: "Tomato juice")
+Ingredient.create(name: "Celery")
+Ingredient.create(name: "Lemon")
 
 
 puts "seeded ingredients!!"
