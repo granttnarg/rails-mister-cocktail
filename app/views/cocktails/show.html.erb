@@ -2,6 +2,7 @@
 <div class="d-flex">
 <h1 id="line_show">_____________</h1>
 </div>
+<div class="container">
 <div class="d-flex">
   <div class="top" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
          url('<%= cl_image_path @cocktail.photo, height: 100, width: 100, crop: :fill %>')">
@@ -10,6 +11,9 @@
   </div>
 </div>
 <div class="col-12" width="100%" >
+  <br>
+  <br>
+
   <% @doses.each do |dose| %>
        <div class="row">
           <div class="col-5"><%= dose.description%></div>
@@ -17,10 +21,16 @@
          <div class="col-1"><%= link_to "X", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %></div>
        </div>
   <% end %>
+  <br>
+  <br>
+
   </div>
   </div>
   </div>
   <div class="col-6"> <%= link_to "Add Ingredient", new_cocktail_dose_path(@cocktail) %></div>
-  <div class="col-6"> <%= link_to "Back to Cocktails", cocktails_path %></div>
+  <div class="col-6"> <%= link_to "Back to Cocktails", cocktails_path %>
+
+  </div>
+  </div>
 
 

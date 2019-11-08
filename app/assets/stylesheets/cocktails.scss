@@ -13,6 +13,10 @@ justify-content: center;
 
 }
 
+#cocktail_photo {
+  margin: 0 auto;
+}
+
 .banner h1 {
   width: auto;
   margin: 20px;
@@ -34,6 +38,7 @@ border: none;
 }
 
 
+
 a {
   border: none;
 }
@@ -42,7 +47,7 @@ body {
 }
 
 .col-sm-12 {
-  border: #EFB332 dotted 50px;
+  border: #EFB332 dotted 40px;
   padding: 10px;
   margin-top: 30px;
 
@@ -102,12 +107,12 @@ font-family: 'Abril Fatface', cursive;;
 }
 
 .col-5 {
-  padding: 40px;
+  padding: 50px;
   font-family: "Open Sans", "Helvetica", "sans-serif";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  font-style: italic;
+
 }
 
 .col-1 {
