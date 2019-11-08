@@ -1,5 +1,4 @@
 class CocktailsController < ApplicationController
-
   def index
     @cocktails = Cocktail.all
   end
@@ -7,7 +6,6 @@ class CocktailsController < ApplicationController
   def show
     @cocktail = Cocktail.find(params[:id])
     @doses = @cocktail.doses
-
   end
 
   def new
@@ -16,8 +14,11 @@ class CocktailsController < ApplicationController
 
   def create
     @cocktail = Cocktail.new(cocktail_params)
-    @cocktail.save
-    redirect_to cocktail_path(@cocktail), notice: 'Cocktail was successfully created.'
+    if @cocktail.save
+      redirect_to cocktail_path(@cocktail), notice: 'Cocktail was successfully created.'
+    else
+      render :new
+    end
   end
 
 private
@@ -25,6 +26,4 @@ private
   def cocktail_params
     params.require(:cocktail).permit(:name, :photo, :id)
   end
-
 end
-
